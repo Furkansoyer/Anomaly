@@ -14,11 +14,11 @@ def predict_quality(model, input_df):
 def run():
 
     from PIL import Image
-    image = Image.open('Bear.png')
+    
 
-    st.image(image,use_column_width=False)
+    
     add_selectbox = st.sidebar.selectbox("How would you like to detect anomaly?",("Online","Batch"))
-    st.sidebar(image)
+  
 
     st.title("Traffic Anomaly Detection App")
     st.write('This is a web app to anomaly detection of your data based on\
